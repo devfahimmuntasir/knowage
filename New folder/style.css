@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(95, 214, 214);
+}
+#welcome {
+    background:tomato;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border: 1px solid black;
+    margin-bottom: 5px;  
+}
+#about {
+    background: rgb(204, 243, 126);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    border:1px solid black;
+}

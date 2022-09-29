@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position css</title>
+    <style>
+        body {
+            height: 4000px;
+        }
+        #box {
+            height: 100px;
+            width: 100px;
+        }
+        .container {
+            background: #ddd;
+            height: 400px;
+            width: 400px;
+            position: relative;
+        }
+        .one {
+
+            background: red;
+            left: 0px;
+            top: 0px;
+            position: relative;
+            z-index: 1;
+        }
+        .two {
+            background: yellow;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            z-index: 1;
+        }
+        .three {
+            background: blue;
+            bottom: 0px;
+            right: 50px;
+            position: absolute;
+        }
+        .four {
+            background: orange;
+            position: fixed;
+        }
+        .five {
+            background: yellowgreen;
+            top: 50px;
+            position: sticky;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one" id="box"></div>
+    <div class="container">
+    <div class="two" id="box"></div>
+    <div class="three" id="box"></div>
+    </div>
+    <div class="four" id="box"></div>
+    <div class="five" id="box"></div>
+</body>
+</html>

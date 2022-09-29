@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadows</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #container {
+            display: flex;
+        }
+        .box {
+            padding: 1rem;
+            margin: 1rem;
+            background: yellowgreen;
+
+            /* offset-x| offset-y| color */
+            box-shadow: 10px 10px black;
+            /* offset-x| offset-y|blur-radius|color */
+            box-shadow: 10px 1px 20px black; 
+            /* Negative Values */
+            box-shadow: -10px -10px 20px black ;
+            /* offset-x|offset-y|blur-radius|spread-radius|color */
+            box-shadow: 5px 5px 20px 1px black;
+            /* inset|offset-x| offset-y| color */
+            box-shadow: inset 5px 5px black;
+            /* Multiple Shadows */
+            box-shadow: 5px 5px 10px black, -5px -5px 10px yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum rem nam aliquam reprehenderit eius debitis officiis sit architecto soluta incidunt?</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum rem nam aliquam reprehenderit eius debitis officiis sit architecto soluta incidunt?</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum rem nam aliquam reprehenderit eius debitis officiis sit architecto soluta incidunt?</p>
+        </div>
+    </div>
+</body>
+</html>

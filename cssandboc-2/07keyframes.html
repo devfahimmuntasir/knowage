@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        body {
+            background: #333;
+        }
+        .box {
+            background: #fff;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            transition: 2s;
+            /* animation-name: fahim;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out; */
+            /* animation: fahim 5s infinite 1s forwards alternate ease; */
+        }
+        .box:hover{
+            background: rgb(255, 0, 119);
+            width: 500px;
+        }
+
+        @keyframes fahim {
+            0% {
+                top: 0;
+                width: 100px;
+            }
+            100% {
+                top: 300px;
+                width: 600px;
+                background: turquoise;
+            }
+        }
+    </style>
+<body>
+    <div class="box"></div>
+</body>
+</html>

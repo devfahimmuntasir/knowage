@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector css</title>
+    <style>
+        /* body */
+        body {
+            background-color: #333;
+        }
+        /* # is for id */
+        #welcome {
+            background-color: #f333;
+        }
+        /* . is for class */
+        .one {
+            color:royalblue;
+        }
+        #about {
+            background-color: yellowgreen;
+        }
+        .two {
+            color:black;
+        }
+        /* Multiply selector */
+        #welcome,#about {
+            border: 1px solid red;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        /* Nested selector0 */
+        #welcome p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="one">Welcome</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga dolore praesentium maiores odio facilis eveniet suscipit, dignissimos neque debitis aliquid beatae alias, consequuntur magni recusandae officia accusantium ullam doloribus sint!
+        </p>
+    </div>
+    <div id="about">
+        <h2 class="two">About</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto magni nemo assumenda dolorum facere excepturi, quibusdam quidem accusantium sed iusto molestias repellendus pariatur expedita ex recusandae commodi modi! Consequatur, at.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Css</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+        .grid {
+            display: grid;
+            /* grid-template-columns: 200px auto 200px; */
+            /* grid-template-columns: repeat(3,auto); */
+            grid-template-columns: 1fr 2fr 2fr;
+            grid-gap: 1rem 2rem ;
+        }
+        .item {
+            padding: 3rem;
+            background: #f4f4f4;
+            border: #ddd 1px solid;
+            text-align: center;
+            font-size: 20px;
+        }
+        .section {
+            padding: 1rem;
+            background: #ddd;
+        }
+        .aside {
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+    </div>
+
+    <main>
+        <section class="section">
+            <h1>Welcome My Website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptatem, iste adipisci aliquam ullam quibusdam, voluptas ab id suscipit odio itaque dolorem beatae nam? Doloremque accusamus impedit culpa veniam qui.</p>
+        </section>
+        <aside class="aside">
+            <h2>About</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis velit eos autem eligendi voluptas itaque.
+        </aside>
+    </main>
+</body>
+</html>
