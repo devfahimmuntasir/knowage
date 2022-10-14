@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Align</title>
+  <style>
+    .container {
+      background: #555;
+      display: flex;
+      flex-wrap: wrap;
+      /* Align items horizontals */
+      justify-content: space-around;
+        /* OPTIONS:
+        flex-start
+        flex-end
+        space-around
+        space-between
+        space-evenly
+        center */
+      height: 600px;
+      /* Align items vertical (must be height)*/
+      align-items: baseline;
+      /* OPTIONS:
+      flex-start
+      baseline
+      center
+      flex-end
+      stretch */
+      
+      /* Align content where there extra space */
+      align-content: stretch;
+      /* OPTIONS:
+        flex-start
+        flex-end
+        space-around
+        space-between
+        space-evenly
+        stretch
+        center */
+    }
+
+    .item-1 {
+      order: 3;
+    }
+
+    .item-2 {
+      /* Align single items vertical */
+      align-self: baseline;
+       /* OPTIONS:
+      flex-start
+      baseline
+      center
+      flex-end
+      stretch */
+      order: 2;
+    }
+
+    .item-3 {
+      order: 1;
+    }
+   
+    .item {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      background: #f4f4f4;
+      border: 1px #ccc solid;
+      padding: 0.75rem;
+      margin: 0.5rem;
+      flex-basis: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item item-1"><h3>Item 1 <br>Fahim</h3></div>
+    <div class="item item-2"><h3>Item 2 <br>Fariha</h3></div>
+    <div class="item item-3"><h3>Item 3 <br>Muntasir</h3></div>
+  </div>
+</body>
+</html>

@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors</title>
+  <style>
+    /* Element selectors */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #444;
+    }
+
+    /* . is for class */
+    .primary-heading {
+      color: green;
+    }
+
+    /* # is for id's */
+    #welcome {
+      background: #f4f4f4;
+    }
+
+    /* Multiple Selectors */
+    #welcome,#about {
+      border: 1px solid #ddd;
+      margin-bottom: 5px;
+      padding: 10px;
+    }
+
+    /* Nested Selectors */
+    #welcome p {
+      font-size: 20px;
+    }
+
+    #about {
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-    <div>
-        <h2>Welcome</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nihil eaque libero nostrum fugiat nobis soluta ex nesciunt ipsa aliquam?</p>
-    </div>
-    <div>
-        <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsum suscipit officia explicabo est ex labore omnis molestias magni maxime!</p>
-    </div>
+  <div id="welcome">
+    <h2 class="primary-heading">Welcome</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor perferendis est sunt nihil adipisci asperiores? Neque porro fugit voluptatem?</p>
+  </div>
+
+  <div id="about">
+    <h2>About</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi eaque dolorem eos nostrum ipsum rerum a, magni sit totam. Possimus.</p>
+  </div>
 </body>
 </html>
