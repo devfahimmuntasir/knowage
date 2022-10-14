@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Variables</title>
+  <style>
+    * {
+       margin: 0;
+      padding: 0;
+    }
+    :root {
+      --max-width:1100px;
+      --primary-color:#444;
+      --secondary-color:#ddd;
+    }
+    .box {
+      --box-1-width:1;
+      --box-2-width:5;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      border-bottom: 5px var(--secondary-color) solid;
+    }
+    #container {
+      display: flex;
+      max-width: var(--max-width);
+      margin: auto;
+    }
+    .box {
+      background: var(--secondary-color);
+      padding: 1rem;
+      margin: 1rem;
+      border-bottom: 5px var(--primary-color) solid;
+    }
+    .box-1 { flex: var(--box-1-width);}
+    .box-2 { flex: var(--box-2-width);}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Variables</h1>
+  </header>
+  <section id="container">
+    <div class="box box-1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, eligendi corporis. Iste vitae quibusdam facilis.</p>
+    </div>
+    <div class="box box-2">
+      <h3>Heading</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate nemo quia repellat aliquid tempora consectetur laborum, dolor sint consequuntur? Eveniet?</p>
+    </div>
+  </section>
+</body>
+</html>

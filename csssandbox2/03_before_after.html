@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Before After</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #444;
+      color: #fff;
+      margin: 0;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    header > h1 {
+      font-size: 3rem;
+    }
+    /* before */
+    header:before {
+      content: '';
+      background: url('https://images.pexels.com/photos/214574/pexels-photo-214574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0.4;
+      z-index: -1;
+    }
+    /* after */
+    .required::after {
+      content:'*';
+      color: red;
+      padding-left: 3px;
+    }
+  </style>
+</head>
+<body>
+  <!-- <label class="required" for="text">Name</label>
+  <input type="text" placeholder="Name"> -->
+  
+   <header>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, laboriosam!</p>
+  </header>
+  <section>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam architecto ex numquam totam assumenda doloremque unde! Quisquam iusto quas incidunt dolor mollitia adipisci in, ipsa repudiandae, corrupti nisi, placeat inventore.</p>
+  </section>
+</body>
+</html>
